@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML-CSS</title>
+    <meta name="description" content="HTML and CSS presentation">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/highlight.min.css">
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/html5-16.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/html5-32.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+        <section class="bg-purple aligncenter">
+          <div class="wrap aligncenter fadeInUp">
+            <h1><strong>HTML</strong></h1>
+            <p class="text-symbols">HyperText Markup Language</p>
+            <p><cite>by Shrivardhan R. Limbkar</cite></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">HTML describes the structure of Web pages</p>
+            <blockquote class="text-quote">
+                <p>Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.</p>
+                <p><cite>Charles Eames</cite></p>
+            </blockquote>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-50">    
+            <h3>Let's learn HTML!</h3>
+            <p>In this module you will learn</p>
+            <hr>
+            <ul class="text-cols">
+              <li><a target="_blank" href="#slide=12">Why learning HTML is important?</a></li>
+              <li><a target="_blank" href="#slide=5">What is HTML?</a></li>
+              <li><a target="_blank" href="#slide=21">Basic Structure</a></li>
+              <li><a target="_blank" href="#slide=29">Formatting Page</a></li>
+              <li><a target="_blank" href="#slide=37">List</a></li>
+              <li><a target="_blank" href="#slide=41">Link</a></li>
+              <li><a target="_blank" href="#slide=46">Images</a></li>
+              <li><a target="_blank" href="#slide=52">Tables</a></li>
+              <li><a target="_blank" href="#slide=58">Forms</a></li>
+              <li><a target="_blank" href="#slide=64">Audio and Video</a></li>
+              <li><a target="_blank" href="#slide=59">Extra Markup</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Why learning HTML is important?</strong></h2>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">
+            <div class="cta-cover">
+              <h3>HTML truly powers the Internet.</h3>
+              <p class="alignright">
+                  It’s the fundamental technology behind everything you see in a web browser, and it’s used (alongside other tech like JavaScript and CSS) to build everything from simple web pages to complex web applications and services.
+              </p>
+            </div>
+            <ul class="flexblock metrics border">
+              <li>
+                <span>
+                  <svg class="fa-yelp">
+                    <use xlink:href="#fa-yelp"></use>
+                  </svg>
+                </span>
+                Better Understand the Web
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-code">
+                    <use xlink:href="#fa-code"></use>
+                  </svg>
+                </span>
+                Create Websites
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-briefcase">
+                    <use xlink:href="#fa-briefcase"></use>
+                  </svg>
+                </span>
+                Better business communications
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-money">
+                    <use xlink:href="#fa-money"></use>
+                  </svg>
+                </span>
+                Earn Money
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>What is HTML?</strong></h2>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">
+            <h3>Web Page</h3>
+            <ul class="flexblock steps">
+              <li>
+                <h2>HTML</h2>
+                <p>Content Structure</p>
+              </li>
+              <li>
+                <div class="process step-2"></div>
+                <h2>CSS</h2>
+                <p>Content Presentation</p>
+              </li>
+              <li>
+                <div class="process step-3"></div>
+                <h2>03. JavaScript</h2>
+                <p>Content Behavior</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section>
+          <div class="wrap">
+            <h3>W3C'S HTML Recommendation Timeline</h3>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <h2>HTML 2.0</h2>
+                <p>1995</p>
+              </li>
+              <li>
+                <div class="process step-2"></div>
+                <h2>HTML 3.2</h2>
+                <p>1997</p>
+              </li>
+              <li>
+                <div class="process step-3"></div>
+                <h2>HTML 4.0</h2>
+                <p>1997</p>
+              </li>
+              <li>
+                <div class="process step-4"></div>
+                <h2>HTML 4.01</h2>
+                <p>1999</p>
+              </li>
+              <li>
+                <div class="process step-5"></div>
+                <h2>HTML 5.0</h2>
+                <p>2014</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>How Browsers Function</strong></h2>
+            <div>
+               <video width="700" controls>
+                  <source src="videos/How%20Web%20Browsers%20Function.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Browser Support</strong></h2>
+            <p><a href="https://browsehappy.com/" target="_blank">https://browsehappy.com/</a></p>
+            <iframe style="width: 100%; height: 200px" src="https://browsehappy.com/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            <h2><strong>Browser Inconsistencies</strong></h2>
+            <p><a href="https://html5test.com/index.html" target="_blank">https://html5test.com/index.html</a></p>
+            <iframe style="width: 100%; height: 200px" src="https://html5test.com/index.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Text Editors</strong></h2>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail " src="images/sublime.png">
+                    <figcaption>
+                      <h2>Sublime Text</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail " src="images/Vscode.png">
+                    <figcaption>
+                      <h2>Visual Studio Code</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail " src="images/brackets.png">
+                    <figcaption>
+                      <h2>Brackets</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail " src="images/atom.png">
+                    <figcaption>
+                      <h2>Atoms</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Basic HTML Structure</strong></h2>
+            <p>Which elements are involved? How to use them in your code?</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>HTML Structure</strong></h3>
+                <img src="images/html_DOM.gif" alt="HTML DOM Structure">
+              </div>
+              <div class="column">
+               <h3><strong>HTML Code</strong></h3>
+               <pre><code class="html lineNumbers">&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Sample Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Page content goes here.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>What is DOCTYPE?</strong></h2>
+            <p>The doctype is supposed to do is tell the browser or user agent which version of HTML that you'll be using so it knows which version of the syntax to use in parsing. But in reality, all it's really doing is triggering something called quirks mode, which ensures that your page is going to be rendered properly.</p>
+            <iframe style="width: 100%; height: 450px" src="https://www.w3.org/QA/2002/04/valid-dtd-list.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-60">
+            <h3>HTML5 Semantic Elements</h3>
+            <h5>What are Semantic Elements?</h5>
+            <hr>
+            <div class="bg-white shadow">
+              <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+               <p>Examples of non-semantic elements: <mark>div</mark> and <mark>span</mark> - Tells nothing about its content.</p>
+                <p>Examples of semantic elements: <mark>form</mark>, <mark>table</mark> and <mark>article</mark> - Clearly defines its content.</p>
+            </div> <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Non Semantic Layout</strong></h3>
+                <img src="images/html4layout.jpg" alt="HTML4 Layout" height="400">
+              </div>
+              <div class="column">
+               <h3><strong>Semantic Layout</strong></h3>
+               <img src="images/html5layout.jpg" alt="HTML5 Layout" height="400">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Formatting Page</strong></h2>
+          </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Headings</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/WGhPb1ZExJ6PUCai1phf/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Paragraph, Strong, Horizontal Rules, Abbreviations</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/eaiuXYR6YTTEUmKoLeEm/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Lists - Ordered, Unordered, Defination, Nested</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/SKrkfjC236eqYfzOfF4V/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Links - Linking to Other Sites, Linking to Other Pages, Email Links</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/kcGspl7FNjZIpBvzHCAL/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Links - Linking to a Specific Part</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/BvexOqnIplPA9I3qivop/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Images - Adding Images, Aligning Images Horizontally, Figure and Figure Caption</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/owPyIL3KrRGTzRZJTSWX/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Tables</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/ps15nuKsIKkWta33aWkr/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Forms - Text input, Password, Radio button, Checkbox, Textarea, Drop Down, Multi Select, Button, File Upload</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/9Ib7tKKScMxTXRSGXQhs/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Forms - Grouping Form Elements</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/scSq6Jnz5zpzbcY1PNij/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Forms - HTML5 Form Validation</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/nJlHI49itqdgaLzyQqMP/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Forms - HTML5 Form Elements</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/IerMlPW5wV9OL8Bw6ALN/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Forms - HTML5 Input Types</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/QQvNoIeTYfiNSTAe6J3Q/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+              <div class="content-left">
+                <h2>Audio and Video</h2>
+                <p>Before HTML5, Audio and Video files could only be played in a browser with a plug-in (like flash).
+                <br/>The HTML5 &lt;audio&gt; and &lt;video&gt; element specifies a standard way to embed audio in a web page.</p>
+                <pre class="html">
+&lt;audio src="audio/test-audio.ogg" controls="" autoplay=""&gt;
+    &lt;p&gt;This browser does not support our audio format.&lt;/p&gt;
+&lt;/audio&gt;
+                </pre>
+                <pre>
+&lt;video src="video/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" preload="" controls="" loop=""&gt;
+    &lt;p&gt;A video of a puppy playing in the snow&lt;/p&gt;
+&lt;/video&gt;                    
+                </pre>
+              </div>
+              <div class="content-left">
+               <h2>Audio</h2>
+                <audio src="audio/test-audio.ogg" controls="">
+                    <p>This browser does not support our audio format.</p>
+                </audio>
+                <br/><br/><br/><br/>
+                <h2>Video</h2>
+                <video src="videos/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" preload="" controls="" loop="">
+                    <p>A video of a puppy playing in the snow</p>
+                </video>
+              </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Extra Markup - Comments, id, class, data Attributes, Block element, Inline elements, iframes</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/G8sCXCJppQwZuhmqw3FU/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+          <div class="wrap zoomIn aligncenter">
+            <figure>
+              <img src="images/html5-api.png" alt="HTML5 APIs" style="width:100%;">
+            </figure>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap aligncenter">
+            <h2><strong>Questions?</strong></h2>
+          </div>
+        </section>
+        
+        <section class="bg-apple aligncenter">
+          <div class="wrap aligncenter fadeInUp">
+            <h1><strong>CSS</strong></h1>
+            <p class="text-symbols">Cascading Style Sheets</p>
+            <p><cite>by Shrivardhan R. Limbkar</cite></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-60">
+            <h3><strong>What is CSS?</strong></h3>
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+            <hr>
+            <h3>Advantages of CSS</h3>
+            <div class="bg-white shadow">
+              <ul class="reasons">
+                <li>
+                  <h4>CSS saves time</h4>
+                </li>
+                <li>
+                  <h4>Pages load faster</h4>
+                </li>
+                <li>
+                  <h4>Easy maintenance</h4>
+                </li>
+                <li>
+                  <h4>Multiple Device Compatibility</h4>
+                </li>
+                <li>
+                  <h4>Global web standards</h4>
+                </li>
+                <li>
+                  <h4>Offline Browsing</h4>
+                </li>
+                <li>
+                  <h4>Platform Independence</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-50">    
+            <h3>Let's learn CSS!</h3>
+            <p>In this module you will learn</p>
+            <hr>
+            <ul class="text-cols">
+              <li><a target="_blank" href="#slide=12">Syntax, and terminology</a></li>
+              <li><a target="_blank" href="#slide=12">Inline, internal and external CSS</a></li>
+              <li><a target="_blank" href="#slide=12">CSS Measurement Units</a></li>
+              <li><a target="_blank" href="#slide=5">CSS Selectors</a></li>
+              <li><a target="_blank" href="#slide=21">Pseudo-classes</a></li>
+              <li><a target="_blank" href="#slide=29">Pseudo-elements</a></li>
+              <li><a target="_blank" href="#slide=37">CSS Specificity</a></li>
+              <li><a target="_blank" href="#slide=41">CSS Colors</a></li>
+              <li><a target="_blank" href="#slide=46">CSS Backgrounds</a></li>
+              <li><a target="_blank" href="#slide=52">CSS Borders</a></li>
+              <li><a target="_blank" href="#slide=58">CSS Margins</a></li>
+              <li><a target="_blank" href="#slide=64">CSS Padding</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Box Model</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Text Formatting & Fonts</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Shorthand properties</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Lists</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Tables</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Overflow</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Display</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Position</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Float</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Layers</a></li>
+              <li><a target="_blank" href="#slide=59">CSS Opacity</a></li>              
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-50">    
+            <h3>Syntax, and terminology</h3>
+            <p>The basic goal of the Cascading Stylesheet (CSS) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The CSS syntax reflects this goal and its basic building blocks</p>
+            <img src="images/css-declaration-block.png">
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap size-50">    
+            <h3>CSS Measurement Units</h3>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="width:20px;">Unit</th>
+                        <th style="width:15px;">Description</th>
+                        <th style="width:60px;">Example</th>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Defines a measurement as a percentage relative to another value, typically an enclosing element.</td>
+                        <td>p {font-size: 16pt; line-height: 125%;}</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>A relative measurement for the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each "em" unit would be 12pt; thus, 2em would be 24pt.</td>
+                        <td>p {letter-spacing: 7em;}</td>
+                    </tr>
+                    <tr>
+                        <td>px</td>
+                        <td>Defines a measurement in screen pixels.</td>
+                        <td>p {padding: 25px;}</td>
+                    </tr>
+                    <tr>
+                        <td>vh</td>
+                        <td>1% of viewport height.</td>
+                        <td>h2 { font-size: 3.0vh; }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>vw</td>
+                        <td>1% of viewport width</td>
+                        <td>h1 { font-size: 5.9vw; }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </section>
+        
+        <section>
+            <div class="wrap">
+               <h4>Inline, internal and external CSS, Comments</h4>
+                <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/2FwykLd16ulIzhdrsFi8/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Selectors</h3>
+            <h5>Universal Selector - <code>*</code></h5>
+            <p>The universal selector works like a wild card character, selecting all elements on a page.</p>
+            <h5>Element Type Selector - <code>&lt;p&gt;</code></h5>
+            <p>This selector must match one or more HTML elements of the same name.</p>
+            <h5>Group Selector - <code>&lt;div&gt;, &lt;p&gt;</code></h5>
+            <p>The grouping selector is used to select all the elements with the same style definitions. Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.</p>
+            <h5>ID Selector - <code>#id</code></h5>
+            <p>An ID selector is declared using a hash, This selector matches any HTML element that has an ID attribute with the same value as that of the selector.</p>
+            <h5>Class Selector - <code>.class</code></h5>
+            <p>The class selector is the most useful of all CSS selectors. It’s declared with a dot preceding a string of one or more characters. The class selector also matches all elements on the page that have their class attribute set to the same value as the class.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Selectors</h3>
+            <h5>Universal Selector, Element Type Selector, Group Selector, ID Selector, Class Selector</h5>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/JI7FXsVE6xdZmEfK7z2c/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Selectors</h3>
+            <h5>Child Selectors</h5>
+            <p><code>div p</code> - Select all p elements inside of a div.</p>
+            <p><code>div > p</code> - Select p element that are just one level below a div.</p>
+            <p><code>div + p</code> - Selects all p elements that are placed immediately after div elements.</p>
+            <p><code>p ~ ul</code> - Selects every ul element that are preceded by a p element</p>
+            <h5>Attribute Selector - <code>a[target], a[href="#"], input[type="text"], input[required]</code></h5>
+            <p>The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Selectors</h3>
+            <h5>Child Selectors</h5>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/vH16leawA1TOIEmRI6yi/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Selectors</h3>
+            <h5>Attribute Selectors</h5>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/YZHetu5yEAdCepgxM8o8/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>Pseudo-classes</h3>
+            <h5>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).</h5>
+            <h5>A pseudo-class always consists of a "colon" (:)</h5>
+            <hr>
+            <p>Link - <code>:active, :hover, :link, :visited</code></p>
+            <p>p, div, li - <code>:empty, :first-child, :last-child, :nth-child()</code></p>
+            <p>input - <code>:enabled, :disabled, :focus, :invalid, :read-only, :valid</code></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>Pseudo-classes</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/gHXSKG6imDny9UgX4ahx/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>Pseudo-elements</h3>
+            <h5>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).</h5>
+            <h5>A pseudo-element always consists of a "colon" (::)</h5>
+            <hr>
+            <p>P - <code>::first-letter, ::first-line, ::selection, ::before, ::after</code></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>Pseudo-classes</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/mw7DzbzGUq6hBd231ZB1/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Specificity</h3>
+            <h5>Specificity determines, which CSS rule is applied by the browsers.</h5>
+            <p>If two selectors apply to the same element, the one with higher specificity wins. <br>
+                You should always try to use IDs to increase the specificity. <br>
+                The universal selector and inherited selectors have a specificity of 0, 0, 0, 0.
+            </p>
+            <a href="http://cssspecificity.com/" target="_blank">http://cssspecificity.com/</a>
+            <img src="images/css-specificity.png" width="700" class="aligncenter">
+            <h5>A Few Special Rules</h5>
+            <p>Ignore the universal selector (*), as it is worth 0. <br>
+                !important overrides everything! Please avoid it at all costs.
+            </p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Colors</h3>
+            <h5>CSS uses color values to specify a color.</h5>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Format</th>
+                        <th>Syntax</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Hex Code</td>
+                        <td>#RRGGBB</td>
+                        <td>p{color:#FF0000;}</td>
+                    </tr>
+                    <tr>
+                        <td>Short Hex Code</td>
+                        <td>#RGB</td>
+                        <td>p{color:#6A7;}</td>
+                    </tr>
+                    <tr>
+                        <td>RGB %</td>
+                        <td>rgb(rrr%,ggg%,bbb%)</td>
+                        <td>p{color:rgb(50%,50%,50%);}</td>
+                    </tr>
+                    <tr>
+                        <td>RGB Absolute</td>
+                        <td>rgb(rrr,ggg,bbb)</td>
+                        <td>p{color:rgb(0,0,255);}</td>
+                    </tr>
+                    <tr>
+                        <td>keyword</td>
+                        <td>aqua, black, etc.</td>
+                        <td>p{color:teal;}</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Backgrounds</h3>
+            <h5>CSS background properties are used to define the background effects for elements.</h5>
+            <ul>
+              <li>background-color: lightblue;</li>
+              <li>background-image: url("page-bg.gif");</li>
+              <li>background-repeat: repeat-x;  OR repeat-y;</li>
+              <li>background-attachment: fixed</li>
+              <li>background-position: right top</li>
+              <li>Shorthand<pre><code>background: #ffffff url("img_tree.png") no-repeat right top; </code></pre></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Borders</h3>
+            <h5>The border properties allow you to specify how the border of the box representing an element.</h5>
+            <ul>
+              <li>border-color specifies the color of a border.</li>
+              <li>border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.</li>
+              <li>border-width specifies the width of a border.</li>
+              <li><strong>shorthand</strong><pre><code>border: 1px solid red; </code></pre></li>
+            </ul>
+            <h5>You can individually change the border of the bottom, left, top and right sides of an element's using the properties.</h5>
+            <ul>
+                <li>border-top</li>
+                <li>border-bottom</li>
+                <li>border-left</li>
+                <li>border-right</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Margins</h3>
+            <h5>The margin property defines the space around an HTML element. It is possible to use negative values to overlap content.</h5>
+            <ul>
+              <li>The margin specifies a shorthand property for setting the margin properties in one declaration.
+              <pre><code>margin: 10px 15px 10px 8px;</code></pre>
+              </li>
+              <li>The margin-bottom specifies the bottom margin of an element.</li>
+              <li>The margin-top specifies the top margin of an element.</li>
+              <li>The margin-left specifies the left margin of an element.</li>
+              <li>The margin-right specifies the right margin of an element.</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Padding</h3>
+            <h5>The CSS padding properties are used to generate space around content.</h5>
+            <ul>
+              <li>The padding specifies a shorthand property for setting the padding properties in one declaration.
+              <pre><code>padding: 5px 15px 5px 8px;</code></pre>
+              </li>
+              <li>The padding-bottom specifies the bottom padding of an element.</li>
+              <li>The padding-top specifies the top padding of an element.</li>
+              <li>The padding-left specifies the left padding of an element.</li>
+              <li>The padding-right specifies the right padding of an element.</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Box Model</h3>
+            <h5>The term "box model" is used when talking about design and layout.</h5>
+            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+            <img src="images/css-box-model.png" class="aligncenter" width="400">
+            <p><strong>The size of the box itself is calculated like this: </strong><br>
+                <strong>width:</strong> width + padding-left + padding-right + border-left + border-right <br>
+                <strong>height:</strong> height + padding-top + padding-bottom + border-top + border-bottom
+            </p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Text Formatting & Fonts</h3>
+            <p>CSS text properties allow you to define several text styles such as color, alignment, spacing, decoration, transformation etc. very easily an effectively.</p>
+            <div>
+               <strong>Text Alignment:</strong><br/>
+               <pre><code>text-align: left, right, center, justify</code></pre>
+            </div><br>
+            <div>
+               <strong>Text Decoration:</strong><br/>
+               <pre><code>text-decoration: none, overline, line-through, underline</code></pre>
+            </div><br>
+            <div>
+               <strong>Text Transformation:</strong><br/>
+               <pre><code>text-transform: none, capitalize, uppercase, lowercase</code></pre>
+            </div><br>
+            <div>
+               <strong>Text Indentation:</strong><br/>
+               <pre><code>text-indent: 100px</code></pre>
+            </div><br>
+            <div>
+               <strong>Text Direction:</strong><br/>
+               <pre><code>direction: rtl, ltr</code></pre>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Text Formatting & Fonts</h3>
+            <p>The CSS font properties allows you to set various styles for fonts likes font family, size and boldness, variant, etc. of a text.</p>
+            <div>
+               <strong>Word Spacing:</strong><br/>
+               <pre><code>word-spacing: 20px;</code></pre>
+            </div><br>
+            <div>
+               <strong>Letter Spacing:</strong><br/>
+               <pre><code>letter-spacing: 10px;</code></pre>
+            </div><br>
+            <div>
+               <strong>Font Family:</strong><br/>
+               <pre><code>font-family: "Times New Roman", Times, serif;</code></pre>
+            </div>
+            <div>
+               <strong>Font Style:</strong><br/>
+               <pre><code>font-style: normal, italic or oblique;</code></pre>
+            </div><br>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Text Formatting & Fonts</h3>
+            <p>The CSS font properties allows you to set various styles for fonts likes font family, size and boldness, variant, etc. of a text.</p>
+            <div>
+               <strong>Font Size:</strong><br/>
+               <pre><code>font-style: xx-small, x-small, small, medium, large, x-large, xx-large;</code></pre>
+            </div><br>
+            <div>
+               <strong>Font Weight:</strong><br/>
+               <pre><code>font-weight: normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900;</code></pre>
+            </div><br>
+            <div>
+               <strong>Font Variant:</strong> - property allows the text to be displayed in a special small-caps variation.<br/>
+               <pre><code>font-variant: small-caps;</code></pre>
+            </div><br>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Text Formatting - Examples</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/jh6nVQoMnBxa5lnl5gdT/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Fonts - Examples</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/T0ku2ZgRv5RavhgKinGA/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Shorthand properties</h3>
+            <p>Shorthand properties are CSS properties that let you set the values of several other CSS properties simultaneously. Using a shorthand property, a Web developer can write more concise and often more readable style sheets, saving time and energy.</p>
+            <p>Shorthands handling properties related to edges of a box, like <strong>border-style</strong>, <strong>margin</strong> or <strong>padding</strong>, always use a consistent 1-to-4-value syntax representing those edges:</p>
+            <img src="images/css-shorthand.png" class="aligncenter" width="600">
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Shorthand properties</h3>
+            <div>
+               <strong>Background properties</strong><br/>
+               <pre><code>background-color: #000;
+background-image: url(images/bg.gif);
+background-repeat: no-repeat;
+background-position: top right;</code>
+           Can be shortened to just one declaration:
+           <code>
+background: #000 url(images/bg.gif) no-repeat top right;
+           </code>
+           </pre>
+            </div>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Shorthand properties</h3>
+            <div>
+               <strong>Font properties</strong><br/>
+               <pre><code>font-style: italic;
+font-weight: bold;
+font-size: .8em;
+line-height: 1.2;
+font-family: Arial, sans-serif;</code>
+           can be shortened to the following:
+           <code>
+font: italic bold .8em/1.2 Arial, sans-serif;
+           </code>
+           </pre>
+            </div>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Shorthand properties</h3>
+            <div>
+               <strong>Border properties</strong><br/>
+               <pre><code>border-width: 1px;
+border-style: solid;
+border-color: #000;</code>
+           Can be written as
+           <code>
+border: 1px solid #000;
+           </code>
+           </pre>
+            </div>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Shorthand properties</h3>
+            <div>
+               <strong>Margin and Padding properties</strong><br/>
+               <pre><code>margin-top: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-left: 5px;</code>
+           Can be written as
+           <code>
+margin: 10px 5px 10px 5px;
+           </code>
+           </pre>
+            </div>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Lists - Examples</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/jY3oQGt67JryxRuqPbXE/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Tables - Examples</h3>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/cuFeha25FW9Q1Jbghzts/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Overflow</h3>
+            <p>The overflow property specifies the behavior that occurs when an element's content overflows (doesn't fit) the element's box.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/ztOkpPEeBzrwA9eKb7ft/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Display</h3>
+            <p>The display property controls the box's type generated by an element.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/Fx0gq3pAVB30KkyaiXAk/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Position</h3>
+            <p>The position property defines how an element will be positioned on a page.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/AwrU3AFUdVRaThx6WICO/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Float</h3>
+            <p>The CSS float property specifies whether a box should float or not.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/VFXs5QdCSdHnGcZGyuCR/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Layers</h3>
+            <p>The CSS z-index property can be used in combination with the position property to create an effect of layers like Photoshop. <br>
+            z-index property specifies the stack level of a box whose position value is one of absolute, fixed, or relative.
+            </p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/E70M8R8gg01v24dNKsNw/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS Opacity</h3>
+            <p>The opacity CSS property specifies the transparency of an element.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/5ARGZHYOa2eJP72JdImg/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section class="bg-facebook">
+          <div class="wrap size-50">    
+            <h3 class="aligncenter">CSS3 FEATURES</h3>
+            <hr>
+            <ul class="text-cols">
+              <li><a target="_blank" href="#slide=59">CSS3 Box Sizing</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Border</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Color</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Drop Shadows</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Transforms</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Transitions</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Animations</a></li>
+              <li><a target="_blank" href="#slide=59">CSS3 Multi-Column Layouts</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS3 Box Sizing</h3>
+            <p>With CSS3 box sizing feature you can control element's effective width.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/uDkjXL5DSS7sAiXKtfeY/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS3 Border</h3>
+            <p>With CSS3, you can apply images to an element's borders.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/8IHYCDdZXfX7B6GjdLXu/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS3 Color</h3>
+            <p>CSS3 provides several new ways to define a color values.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/ml6G2eq6uyl9GLix9Z4o/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+        <section>
+          <div class="wrap">    
+            <h3>CSS3 Drop Shadows</h3>
+            <p>With CSS3, you can apply drop shadow to an element.</p>
+            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/ea50ewXBncJO7BEbyUO2/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          </div>    
+        </section>
+        
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="js/libs/highlight.min.js"></script>
+    <script src="js/libs/highlightjs-line-numbers.min.js"></script>
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+      hljs.initHighlightingOnLoad();
+      hljs.initLineNumbersOnLoad();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>
