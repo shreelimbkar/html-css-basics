@@ -1,2 +1,1 @@
-#  https://html-css-basics.github.io
-Basics of HTML and CSS
+# Presentation - Basics of HTML and CSS 
